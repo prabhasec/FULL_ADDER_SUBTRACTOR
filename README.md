@@ -38,6 +38,11 @@ Borrow out = A'Bin + A'B + BBin
 
 **Truthtable**
 
+![image](https://github.com/user-attachments/assets/6e734817-7e76-408a-87ed-a6040a6495dd)
+
+![image](https://github.com/user-attachments/assets/f97a0e5c-3574-45bd-b8f9-32dfc6deda5c)
+
+
 **Procedure**
 
 Write the detailed procedure here
@@ -46,58 +51,24 @@ Write the detailed procedure here
 
 /* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
 
+![Screenshot 2024-12-04 113005](https://github.com/user-attachments/assets/75a5fd95-7eae-4be1-8ba3-163340d7006b)
 
-**Full Adder**
-
-module Experiment4a(a,b,cin,sum,carry);
-
-input a,b,cin;
-
-output sum,carry;
-
-assign sum=( (a ^ b)^cin);
-
-assign carry= ( (a & b)| ( cin &(a ^ b )));
-
-endmodule
-
-
-**Full Subtractor**
-
-module Experiment4b(a,b,bin,difference,borrow);
-
-input a,b,bin;
-
-output difference,borrow;
-
-assign difference= ( (a ^ b)^bin);
-
-assign borrow= ( ( ~a & b)| ( bin & (~(a ^ b ))));
-
-endmodule
+![Screenshot 2024-12-04 113809](https://github.com/user-attachments/assets/acb3854e-26bc-4f6b-a429-d57a3d78e2bb)
 
 
 **RTL Schematic**
 
-**Full Adder**
+![Screenshot 2024-12-04 112942](https://github.com/user-attachments/assets/c0372d1e-8bfe-4ade-853c-03f09fc5c3c9)
 
-![Screenshot 2024-11-23 111023](https://github.com/user-attachments/assets/629d34d3-12d4-4949-8b58-580ad3f46a1b)
-
-**Full Subtractor**
-
-![Screenshot 2024-11-23 111559](https://github.com/user-attachments/assets/43a7748e-fc92-4e57-bbc1-fbd653a722a6)
-
+![Screenshot 2024-12-04 114033](https://github.com/user-attachments/assets/54c44e6b-de6f-420a-a65b-4a489df4933e)
 
 
 **Output Timing Waveform**
 
-**Full Adder**
+![Screenshot 2024-12-04 112914](https://github.com/user-attachments/assets/c447937f-5722-4a65-b610-4ac6090de3b9)
 
-![Screenshot 2024-11-23 111231](https://github.com/user-attachments/assets/dfedd4e3-628f-416b-991a-344389261b7a)
+![Screenshot 2024-12-04 114005](https://github.com/user-attachments/assets/6abe9e49-e6fc-47d5-bbab-b482416c7bf7)
 
-**Full Subtractor**
-
-![Screenshot 2024-11-23 111733](https://github.com/user-attachments/assets/74b42eea-3319-436a-a36c-55f8a06f1c5d)
 
 
 
